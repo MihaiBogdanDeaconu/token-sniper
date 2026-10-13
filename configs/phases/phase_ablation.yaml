@@ -1,0 +1,71 @@
+defaults:
+  - ../base
+
+phase: ablation
+name: retrieval_ablation_study
+
+dataset:
+  benchmark: swe-bench-verified
+  subset_size: 50
+  source_manifest: configs/phases/phase0_tasks.json
+
+conditions:
+  dense_knn:
+    retrieval: hybrid_rrf
+    components: [dense_embeddings, bm25]
+    file_selection: top_k
+    description: "Dense (Jina 256d) + BM25 hybrid via RRF, top-K files as oracle context"
+
+  dense_reranker:
+    retrieval: hybrid_rrf + reranker
+    components: [dense_embeddings, bm25, xgb_reranker]
+    file_selection: reranker_top_k
+    description: "Hybrid retrieval re-scored by XGBoost LTR using 17 SSG structural features"
+
+  dense_reranker_vgib:
+    retrieval: hybrid_rrf + reranker + vgib
+    components: [dense_embeddings, bm25, xgb_reranker, vgib_selector]
+    file_selection: vgib_retention
+    description: "Reranked subgraph compressed by supervised VGIB selector (p_v >= 0.5)"
+
+  dense_reranker_vgib_rl:
+    retrieval: hybrid_rrf + reranker + vgib + grpo
+    components: [dense_embeddings, bm25, xgb_reranker, vgib_policy_rl]
+    file_selection: vgib_retention
+    description: "VGIB policy fine-tuned with GRPO on proxy reward (recall + compression)"
+
+metrics:
+  primary: pass_at_1
+  secondary:
+    - retrieval_file_recall
+    - oracle_file_count_mean
+    - gold_in_oracle_ratio
+    - token_usage_total
+
+ablation_comparisons:
+  reranker_lift:
+    baseline: dense_knn
+    treatment: dense_reranker
+    metric: pass_at_1
+  vgib_lift:
+    baseline: dense_reranker
+    treatment: dense_reranker_vgib
+    metric: pass_at_1
+  rl_lift:
+    baseline: dense_reranker_vgib
+    treatment: dense_reranker_vgib_rl
+    metric: pass_at_1
+
+agent:
+  context_window: 65536
+  oracle_top_k: 15
+  sampling:
+    temperature: 0.6
+    top_p: 0.95
+    top_k: 20
+    presence_penalty: 1.5
+
+infrastructure:
+  gpu_required: false
+  dind_sidecar: true
+  estimated_runtime_per_condition: "6-10h"

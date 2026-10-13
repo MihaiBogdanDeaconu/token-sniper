@@ -1,0 +1,41 @@
+defaults:
+  - ../base
+
+phase: 6
+name: transfer_and_generalization
+
+cross_repo:
+  method: leave_one_repository_out
+  folds: 12
+
+  conditions:
+    cold_start:
+      description: "Train edge predictor + VGIB from scratch on held-out repo only"
+    transfer:
+      description: "Use models trained on other 11 repos, applied directly — no fine-tuning"
+    transfer_adapt:
+      description: "Transfer from 11 repos, then fine-tune on 5 tasks from held-out repo"
+      adaptation_tasks: 5
+
+  key_comparison: "transfer vs cold_start"
+  success: "Transfer consistently outperforms Cold Start"
+
+negative_transfer:
+  detection: "Compare transfer vs cold_start per repository"
+  analysis: "Identify structural properties that differ from training distribution"
+  mitigation: "Repository-similarity gating — only transfer from sufficiently similar repos"
+
+cross_language:
+  status: stretch_goal
+  target_languages: [typescript]
+  target_repos: 2_to_3
+  parser: tree-sitter-typescript
+  edge_predictor: python_trained_only
+  metrics:
+    - edge_prediction_auc
+    - downstream_retrieval_quality
+  expectation: "High-risk, high-reward. Negative results are expected and informative."
+
+kill_criterion:
+  condition: "Transfer underperforms cold start consistently"
+  action: "Add repo-similarity gating to transfer mechanism"

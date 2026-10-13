@@ -1,0 +1,139 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["token_sniper"]
+
+[project]
+name = "token-sniper"
+version = "0.1.0"
+description = "Minimal sufficient retrieval for repository-level code intelligence via VGIB"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+keywords = ["code-intelligence", "graph-neural-networks", "retrieval", "information-bottleneck"]
+
+dependencies = [
+    "networkx>=3.3",
+    "tree-sitter>=0.23",
+    "tree-sitter-python>=0.23",
+    "numpy>=1.26",
+    "pydantic>=2.8",
+    "pyyaml>=6.0",
+    "rich>=13.7",
+    "typer>=0.12",
+]
+
+[project.optional-dependencies]
+ml = [
+    "torch>=2.3",
+    "torch-geometric>=2.6",
+    "torch-scatter",
+    "torch-sparse",
+]
+retrieval = [
+    "chromadb>=0.5",
+    "voyageai>=0.3",
+    "sentence-transformers>=3.0",
+    "rank-bm25>=0.2",
+    "xgboost>=2.0",
+]
+agent = [
+    "openai>=1.40",
+    "litellm>=1.40",
+]
+experiments = [
+    "hydra-core>=1.3",
+    "omegaconf>=2.3",
+    "mlflow>=2.14",
+    "scipy>=1.13",
+    "scikit-learn>=1.4",
+    "docker>=7.0",
+]
+data = [
+    "datasets>=2.20",
+    "pandas>=2.2",
+]
+research = [
+    "torch>=2.3",
+    "torch-geometric>=2.6",
+    "torch-scatter",
+    "torch-sparse",
+    "chromadb>=0.5",
+    "voyageai>=0.3",
+    "sentence-transformers>=3.0",
+    "rank-bm25>=0.2",
+    "xgboost>=2.0",
+    "openai>=1.40",
+    "litellm>=1.40",
+    "hydra-core>=1.3",
+    "omegaconf>=2.3",
+    "mlflow>=2.14",
+    "scipy>=1.13",
+    "scikit-learn>=1.4",
+    "docker>=7.0",
+    "datasets>=2.20",
+    "pandas>=2.2",
+]
+dev = [
+    "pytest>=8.2",
+    "pytest-cov>=5.0",
+    "ruff>=0.5",
+    "mypy>=1.10",
+    "pre-commit>=3.7",
+    "ipykernel>=6.29",
+    "jupyter>=1.0",
+    "matplotlib>=3.9",
+    "seaborn>=0.13",
+]
+
+local-models = [
+    "vllm>=0.5",
+    "transformers>=4.42",
+    "nomic>=3.0",
+]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+force-exclude = true
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B", "SIM", "TCH"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/fixtures/**/*.py" = ["F821", "B024", "I001"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+exclude = ["^tests/fixtures/"]
+
+[[tool.mypy.overrides]]
+module = [
+    "tree_sitter",
+    "tree_sitter_python",
+    "networkx",
+    "datasets",
+    "mlflow",
+    "scipy.*",
+    "openai",
+    "yaml",
+    "chromadb",
+    "chromadb.*",
+    "voyageai",
+    "nomic",
+    "sentence_transformers",
+    "sentence_transformers.*",
+    "rank_bm25",
+    "xgboost",
+]
+ignore_missing_imports = true

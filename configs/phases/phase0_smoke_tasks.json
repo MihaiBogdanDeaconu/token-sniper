@@ -1,0 +1,65 @@
+[
+  {
+    "instance_id": "astropy__astropy-13398",
+    "repo": "astropy/astropy",
+    "base_commit": "6500928dc0e57be8f06d1162eacc3ba5e2eff692",
+    "difficulty": "1-4 hours",
+    "gold_patch_files": [
+      "astropy/coordinates/builtin_frames/__init__.py",
+      "astropy/coordinates/builtin_frames/intermediate_rotation_transforms.py",
+      "astropy/coordinates/builtin_frames/itrs.py",
+      "astropy/coordinates/builtin_frames/itrs_observed_transforms.py"
+    ],
+    "gold_patch_file_count": 4,
+    "bucket": "multi_file_4_plus"
+  },
+  {
+    "instance_id": "astropy__astropy-14369",
+    "repo": "astropy/astropy",
+    "base_commit": "fa4e8d1cd279acf9b24560813c8652494ccd5922",
+    "difficulty": "1-4 hours",
+    "gold_patch_files": [
+      "astropy/units/format/cds.py",
+      "astropy/units/format/cds_parsetab.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "django__django-10554",
+    "repo": "django/django",
+    "base_commit": "14d026cccb144c6877294ba4cd4e03ebf0842498",
+    "difficulty": "1-4 hours",
+    "gold_patch_files": [
+      "django/db/models/sql/compiler.py",
+      "django/db/models/sql/query.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "django__django-11138",
+    "repo": "django/django",
+    "base_commit": "c84b91b7603e488f7171fdff8f08368ef3d6b856",
+    "difficulty": "1-4 hours",
+    "gold_patch_files": [
+      "django/db/backends/mysql/operations.py",
+      "django/db/backends/oracle/operations.py",
+      "django/db/backends/sqlite3/base.py",
+      "django/db/backends/sqlite3/operations.py"
+    ],
+    "gold_patch_file_count": 4,
+    "bucket": "multi_file_4_plus"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-13989",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "a3e2897bfaf9eaac1d6649da535c4e721c89fa69",
+    "difficulty": "<15 min fix",
+    "gold_patch_files": [
+      "lib/matplotlib/axes/_axes.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  }
+]

@@ -1,0 +1,91 @@
+seed: 42
+
+paths:
+  data_dir: ${TOKEN_SNIPER_DATA_DIR:-data/}
+  experiments_dir: ${TOKEN_SNIPER_EXPERIMENTS_DIR:-experiments/}
+  swebench_cache: ${TOKEN_SNIPER_SWEBENCH_CACHE:-data/swebench/}
+  traces_dir: ${TOKEN_SNIPER_TRACES_DIR:-data/traces/}
+  graph_cache: ${TOKEN_SNIPER_GRAPH_CACHE:-data/graphs/}
+
+models:
+  agent:
+    name: ${TOKEN_SNIPER_AGENT_MODEL:-Qwen/Qwen3.5-35B-A3B-FP8}
+    provider: ${TOKEN_SNIPER_AGENT_PROVIDER:-local}
+    temperature: 0.6
+    top_p: 0.95
+    top_k: 20
+    presence_penalty: 0.0
+    max_tokens: ${TOKEN_SNIPER_AGENT_MAX_TOKENS:-4096}
+    context_window: ${TOKEN_SNIPER_AGENT_CONTEXT_WINDOW:-65536}
+    max_turns: 15
+    base_url: ${TOKEN_SNIPER_AGENT_BASE_URL:-http://qwen-vllm:8077/v1}
+    api_key_env: ${TOKEN_SNIPER_AGENT_API_KEY_ENV:-LOCAL_OPENAI_API_KEY}
+    request_timeout_seconds: ${TOKEN_SNIPER_AGENT_REQUEST_TIMEOUT:-180}
+
+  embeddings:
+    name: voyage-code-3
+    provider: voyageai
+    dimension: 1024
+    api_key_env: VOYAGE_API_KEY
+    batch_size: 128
+
+  knowledge_extractor:
+    name: qwen3.5-4b
+    provider: local
+    vram_gb: 3
+
+graph:
+  ssg:
+    parser: tree-sitter
+    node_types: [file, class, function, method, module_preamble]
+    edge_types: [calls, imports, inherits, contains, overrides]
+
+  edge_predictor:
+    architecture: graphsage_jk
+    layers: 3
+    neighbors_per_layer: 25
+    hidden_dim: 384
+    node_feature_dim: 1095
+
+  vgib:
+    architecture: graphsage
+    layers: 3
+    gumbel_temperature_start: 1.0
+    gumbel_temperature_end: 0.1
+    beta_values: [0.001, 0.01, 0.1, 1.0]
+
+vector_store:
+  backend: chromadb
+  persist_directory: data/chromadb/
+  collection_prefix: token_sniper
+
+retrieval:
+  strategies: [shell_only, dense_rag, ssg_ppr, augmented_ppr, vgib]
+  ppr_alpha: 0.15
+  top_k_values: [10, 20, 50, 100, 200]
+
+evaluation:
+  metrics: [pass_at_1, pass_at_3, token_efficiency, retrieval_precision, retrieval_recall, retrieval_map]
+  num_seeds: 3
+  agent_workers: ${TOKEN_SNIPER_AGENT_WORKERS:-4}
+  condition_workers: ${TOKEN_SNIPER_CONDITION_WORKERS:-1}
+  significance_test: mcnemar
+  significance_threshold: 0.05
+  harness:
+    dataset_name: princeton-nlp/SWE-bench_Verified
+    split: test
+    max_workers: ${TOKEN_SNIPER_HARNESS_MAX_WORKERS:-4}
+    submission_batch_size: ${TOKEN_SNIPER_HARNESS_BATCH_SIZE:-8}
+    cache_level: env
+    clean: false
+    force_rebuild: false
+    open_file_limit: 4096
+    timeout_seconds: 1800
+    rewrite_reports: false
+    modal: false
+    instance_image_tag: latest
+    env_image_tag: latest
+
+mlflow:
+  tracking_uri: experiments/mlflow/
+  experiment_prefix: token-sniper

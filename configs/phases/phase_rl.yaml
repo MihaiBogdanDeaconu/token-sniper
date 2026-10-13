@@ -1,0 +1,53 @@
+defaults:
+  - ../base
+
+phase: rl
+name: grpo_context_compression
+
+grpo:
+  warm_start: experiments/phase3_vgib/compression/best.pt
+  group_size: 8
+  clip_eps: 0.2
+  kl_coeff: 0.1
+  kl_target: 0.01
+  entropy_coeff: 0.1
+  lr: 1e-5
+  weight_decay: 1e-5
+  epochs: 50
+  patience: 10
+  tau_start: 1.0
+  tau_end: 0.5
+  rollout_temperature: 2.0
+  grad_accum_steps: 32
+
+reward:
+  proxy:
+    beta: 0.5
+    trace_weight: 0.1
+    recall_bonus: 0.5
+  llm_judge:
+    enabled: false
+    judge_every: 5
+    max_turns: 8
+
+model:
+  hidden_dim: 384
+  out_dim: 256
+
+comparison_strategies:
+  phase_c_baseline:
+    type: supervised_baseline
+    description: "Phase C RecallConstrainedTokenLoss (warm-start source)"
+  grpo_proxy:
+    type: proposed
+    description: "GRPO with proxy reward (file recall + compression + trace)"
+
+key_deliverable:
+  name: rl_vs_phase_c_pareto
+  x_axis: retained_tokens
+  y_axis: file_recall_at_50pct_compression
+  description: "GRPO should dominate Phase C on the recall-compression frontier."
+
+kill_criterion:
+  condition: "GRPO does not improve mean file recall at matched compression over Phase C"
+  action: "Investigate reward shaping; revert to Phase C if proxy reward is poorly calibrated"

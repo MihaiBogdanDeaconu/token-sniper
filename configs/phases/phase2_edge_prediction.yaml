@@ -1,0 +1,61 @@
+defaults:
+  - ../base
+
+phase: 2
+name: learned_edge_prediction
+
+trace_collection:
+  method: sys_setprofile
+  target: fail_to_pass_tests
+  ground_truth: execution_trace_edges
+
+data_split:
+  train_ratio: 0.8
+  stratify_by: repository
+
+edge_predictor:
+  architecture: graphsage_jk
+  layers: 3
+  hidden_dim: 384
+  node_features:
+    entity_type: onehot
+    code_embedding: voyage_code3_1024d
+    file_path_embedding: learned_64d
+    degree: scalar
+  candidate_generation:
+    max_hops_filesystem: 3
+    require_shared_import: true
+  training:
+    loss: focal_loss
+    focal_gamma: 2.0
+    negative_ratio: 5
+    epochs: 50
+    learning_rate: 0.0005
+    lr_scheduler: cosine_annealing
+    gradient_clip_norm: 1.0
+
+experiments:
+  edge_quality:
+    name: "2A — Edge Prediction Quality"
+    metrics: [auc_roc, precision_at_k, recall_at_k]
+    eval_on: test_tasks
+
+  retrieval_impact:
+    name: "2B — Retrieval Impact"
+    augmentation_sizes: [50, 100, 200, 500]
+    method: ppr_on_augmented_graph
+    compare_to: phase1.graph_ppr
+
+  downstream_impact:
+    name: "2C — Downstream Impact"
+    eval_on: test_tasks
+    metric: pass_at_1
+    compare: [ssg_only, augmented_graph]
+
+kill_criterion:
+  metric: auc_roc
+  threshold: 0.65
+  remediation:
+    - "Add execution-trace co-occurrence statistics as features"
+    - "Use more expressive code embedding model"
+    - "Expand training set with full test suite traces"

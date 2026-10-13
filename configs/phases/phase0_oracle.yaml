@@ -1,0 +1,40 @@
+defaults:
+  - ../base
+
+phase: 0
+name: oracle_ceiling_measurement
+
+dataset:
+  benchmark: swe-bench-verified
+  subset_size: 50
+  stratification:
+    single_file: 20
+    multi_file_2_3: 20
+    multi_file_4_plus: 10
+  min_tasks_per_repo: 3
+
+conditions:
+  blind_agent:
+    retrieval: none
+    tools: [grep, find, cat, sed]
+    description: "Standard SWE-agent setup — agent discovers code through exploration"
+
+  oracle_retrieval:
+    retrieval: oracle
+    context: gold_patch_files
+    description: "Agent receives all files from the gold-standard patch diff pre-loaded"
+
+metrics:
+  primary: pass_at_1
+  secondary:
+    - navigation_token_overhead
+    - retrieval_ceiling_gap
+
+kill_criterion:
+  metric: retrieval_ceiling_gap
+  threshold: 8
+  action: "Pivot to different benchmark or evaluation axis"
+
+expected_outcome:
+  ceiling_gap_range: [10, 20]
+  rationale: "Published results show agents spend 60-80% of tokens on navigation"

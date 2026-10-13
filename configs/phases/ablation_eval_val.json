@@ -1,0 +1,1447 @@
+[
+  {
+    "instance_id": "instructlab__instructlab-2004",
+    "repo": "instructlab/instructlab",
+    "base_commit": "e8097167e0f70e887cc7aa8b9eaeabacbff6ed6a",
+    "difficulty": "{'files': 2, 'hunks': 3, 'lines': 9}",
+    "gold_patch_files": [
+      "src/instructlab/configuration.py",
+      "src/instructlab/model/train.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "streamlink__streamlink-6389",
+    "repo": "streamlink/streamlink",
+    "base_commit": "6e2b7af3e0334a944e2dbb8159c553cfaa0cbe05",
+    "difficulty": "{'files': 1, 'hunks': 9, 'lines': 68}",
+    "gold_patch_files": [
+      "src/streamlink/plugins/chzzk.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-29503",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "f39bf4d2585746fce3ba39decba62693c82f194e",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 25}",
+    "gold_patch_files": [
+      "lib/matplotlib/axes/_axes.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "conan-io__conan-17964",
+    "repo": "conan-io/conan",
+    "base_commit": "f31a78f057c05c20482965cbdf21a79a9db04c45",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 12}",
+    "gold_patch_files": [
+      "conan/internal/model/cpp_info.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-29698",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "1c02efb55247860b1dc92aa0c5cd5c69b8b8e59d",
+    "difficulty": "{'files': 2, 'hunks': 4, 'lines': 138}",
+    "gold_patch_files": [
+      "doc/users/next_whats_new/logticks.rst",
+      "lib/matplotlib/ticker.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-29054",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "f8900ead0d9381a7652568768b065324f929734e",
+    "difficulty": "{'files': 2, 'hunks': 4, 'lines': 73}",
+    "gold_patch_files": [
+      "doc/api/next_api_changes/behavior/29054-AL.rst",
+      "lib/matplotlib/ticker.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "streamlink__streamlink-6207",
+    "repo": "streamlink/streamlink",
+    "base_commit": "c22bab6233f89efa9a091c5d736e7c7b58199970",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 6}",
+    "gold_patch_files": [
+      "src/streamlink_cli/main.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "conan-io__conan-17877",
+    "repo": "conan-io/conan",
+    "base_commit": "10ff1e76e9d3b818332596166691fef93a6ed976",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 9}",
+    "gold_patch_files": [
+      "conans/client/graph/graph_builder.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-29892",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "a46469423c40edab3b2321d00ed371b7f30c8f50",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 5}",
+    "gold_patch_files": [
+      "lib/matplotlib/image.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "conan-io__conan-16987",
+    "repo": "conan-io/conan",
+    "base_commit": "28739c763000afc908ebc64eba717b7d01784de1",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 8}",
+    "gold_patch_files": [
+      "conans/model/info.py",
+      "conans/model/requires.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "kubernetes-client__python-2303",
+    "repo": "kubernetes-client/python",
+    "base_commit": "4da83df8f0c0b97554e2f8a130218ca3b1396062",
+    "difficulty": "{'files': 2, 'hunks': 4, 'lines': 12}",
+    "gold_patch_files": [
+      "kubernetes/base/config/exec_provider.py",
+      "kubernetes/base/config/kube_config.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "streamlink__streamlink-6439",
+    "repo": "streamlink/streamlink",
+    "base_commit": "5a3f7c2b018695c9290d92dfc2384ee7a2cb61c3",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 4}",
+    "gold_patch_files": [
+      "src/streamlink/plugins/tf1.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "conan-io__conan-17346",
+    "repo": "conan-io/conan",
+    "base_commit": "fddc08caff79db6f3d7981a31fca73214359e861",
+    "difficulty": "{'files': 8, 'hunks': 18, 'lines': 60}",
+    "gold_patch_files": [
+      "conan/internal/deploy.py",
+      "conan/internal/methods.py",
+      "conan/tools/cmake/cmakedeps/cmakedeps.py",
+      "conan/tools/cmake/cmakedeps2/cmakedeps.py",
+      "conans/client/graph/build_mode.py",
+      "conans/client/graph/graph_builder.py",
+      "conans/client/graph/profile_node_definer.py",
+      "conans/client/loader.py"
+    ],
+    "gold_patch_file_count": 8,
+    "bucket": "multi_file_4_plus"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-28584",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "8552c7a7f3dcca4ecb3ca4e3e61b7629a6b3a18c",
+    "difficulty": "{'files': 6, 'hunks': 8, 'lines': 35}",
+    "gold_patch_files": [
+      "galleries/examples/axes_grid1/parasite_simple.py",
+      "lib/matplotlib/axes/_base.py",
+      "lib/matplotlib/axis.py",
+      "lib/matplotlib/backends/qt_editor/figureoptions.py",
+      "lib/mpl_toolkits/axisartist/axis_artist.py",
+      "lib/mpl_toolkits/mplot3d/axes3d.py"
+    ],
+    "gold_patch_file_count": 6,
+    "bucket": "multi_file_4_plus"
+  },
+  {
+    "instance_id": "conan-io__conan-17967",
+    "repo": "conan-io/conan",
+    "base_commit": "f31a78f057c05c20482965cbdf21a79a9db04c45",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 11}",
+    "gold_patch_files": [
+      "conan/tools/microsoft/msbuilddeps.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "kedro-org__kedro-4075",
+    "repo": "kedro-org/kedro",
+    "base_commit": "5ec27a365963afd3f8910434ab21ddbb7463adc6",
+    "difficulty": "{'files': 1, 'hunks': 3, 'lines': 9}",
+    "gold_patch_files": [
+      "kedro/framework/cli/cli.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "conan-io__conan-18012",
+    "repo": "conan-io/conan",
+    "base_commit": "1fb10da677ee052a5f38df2298ba6192d51ea212",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 9}",
+    "gold_patch_files": [
+      "conan/internal/model/version_range.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "python-babel__babel-1163",
+    "repo": "python-babel/babel",
+    "base_commit": "fb8dbba89cfc8d8a54d4c34c60b38fd504c4906e",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 8}",
+    "gold_patch_files": [
+      "babel/dates.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "stanfordnlp__dspy-1472",
+    "repo": "stanfordnlp/dspy",
+    "base_commit": "2dbc249b7d5def49aecaf8ab23d147e15ca6c63e",
+    "difficulty": "{'files': 1, 'hunks': 6, 'lines': 75}",
+    "gold_patch_files": [
+      "dspy/evaluate/evaluate.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "conan-io__conan-17092",
+    "repo": "conan-io/conan",
+    "base_commit": "f31647f3ef2feaabc91b2875d540ae48d2a4a4c8",
+    "difficulty": "{'files': 2, 'hunks': 9, 'lines': 41}",
+    "gold_patch_files": [
+      "conan/internal/default_settings.py",
+      "conan/tools/build/flags.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-29873",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "3274d6a65d8a6e911ef3fd7d180e34c41c132bec",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 3}",
+    "gold_patch_files": [
+      "lib/matplotlib/axes/_axes.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "Textualize__textual-5743",
+    "repo": "Textualize/textual",
+    "base_commit": "21e91cd132964b9eb44442e6c6765c8fa22c2128",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 9}",
+    "gold_patch_files": [
+      "CHANGELOG.md",
+      "src/textual/dom.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "streamlink__streamlink-6420",
+    "repo": "streamlink/streamlink",
+    "base_commit": "638ea0dffad99cb2c28a64888bb2f528a3e4f31c",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 10}",
+    "gold_patch_files": [
+      "src/streamlink/plugins/nos.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-29919",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "126515a81f2e981894095dc9e76c4634f85dc2ca",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 29}",
+    "gold_patch_files": [
+      "lib/matplotlib/path.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "python-control__python-control-1104",
+    "repo": "python-control/python-control",
+    "base_commit": "71bd7319fe324f7b7ff14b8210420843bf06d7d2",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 6}",
+    "gold_patch_files": [
+      "control/freqplot.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-29798",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "a9dc9acc2dd1bab761b45e48c8d63aa108811a82",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 5}",
+    "gold_patch_files": [
+      "lib/matplotlib/projections/polar.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "streamlink__streamlink-6361",
+    "repo": "streamlink/streamlink",
+    "base_commit": "d532def93ed25a3831aef588627bd855a71af336",
+    "difficulty": "{'files': 1, 'hunks': 4, 'lines': 20}",
+    "gold_patch_files": [
+      "src/streamlink_cli/show_matchers.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "stanfordnlp__dspy-8053",
+    "repo": "stanfordnlp/dspy",
+    "base_commit": "dd954e3cf2fbb119530ca2e6885b784bad9bace9",
+    "difficulty": "{'files': 1, 'hunks': 6, 'lines': 19}",
+    "gold_patch_files": [
+      "dspy/propose/grounded_proposer.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "conan-io__conan-17781",
+    "repo": "conan-io/conan",
+    "base_commit": "0017c296b27770cbf8dfbfc6422bb37f13970b62",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 15}",
+    "gold_patch_files": [
+      "conan/tools/env/environment.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-29317",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "28f69ba98708393deb0f35501940f40b0f081504",
+    "difficulty": "{'files': 1, 'hunks': 3, 'lines': 6}",
+    "gold_patch_files": [
+      "lib/matplotlib/legend.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "kedro-org__kedro-4092",
+    "repo": "kedro-org/kedro",
+    "base_commit": "036016004c5a2805b977b268af39313d6e7d5700",
+    "difficulty": "{'files': 3, 'hunks': 6, 'lines': 34}",
+    "gold_patch_files": [
+      "RELEASE.md",
+      "docs/source/configuration/configuration_basics.md",
+      "kedro/config/omegaconf_config.py"
+    ],
+    "gold_patch_file_count": 3,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "conan-io__conan-17863",
+    "repo": "conan-io/conan",
+    "base_commit": "86f29e137a10bb6ed140c1a8c05c3099987b13c5",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 2}",
+    "gold_patch_files": [
+      "conan/tools/env/environment.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "kedro-org__kedro-4580",
+    "repo": "kedro-org/kedro",
+    "base_commit": "769629fb23c19a7629ee8b1ae97940665d6d57bf",
+    "difficulty": "{'files': 3, 'hunks': 7, 'lines': 68}",
+    "gold_patch_files": [
+      ".secrets.baseline",
+      "RELEASE.md",
+      "kedro/io/core.py"
+    ],
+    "gold_patch_file_count": 3,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "conan-io__conan-18153",
+    "repo": "conan-io/conan",
+    "base_commit": "b8aad0d032315f0d6317f7cf570bb65083f0c973",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 12}",
+    "gold_patch_files": [
+      "conans/client/rest_client_local_recipe_index.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "python-babel__babel-1132",
+    "repo": "python-babel/babel",
+    "base_commit": "f91754b01cb9f32b83aeaa80b74ed10b5dfccb6a",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 2}",
+    "gold_patch_files": [
+      "babel/messages/pofile.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "conan-io__conan-17591",
+    "repo": "conan-io/conan",
+    "base_commit": "eb95f5b9472f8d75888d0ffcecba32e17a882423",
+    "difficulty": "{'files': 1, 'hunks': 4, 'lines': 13}",
+    "gold_patch_files": [
+      "conan/tools/files/files.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "jazzband__tablib-613",
+    "repo": "jazzband/tablib",
+    "base_commit": "70775bc922602ae535e0b2e525f6926030334ab8",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 9}",
+    "gold_patch_files": [
+      "src/tablib/formats/_ods.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "jlowin__fastmcp-279",
+    "repo": "jlowin/fastmcp",
+    "base_commit": "2dc71971a2ace203fc9250efbbd21aa13960caae",
+    "difficulty": "{'files': 3, 'hunks': 16, 'lines': 49}",
+    "gold_patch_files": [
+      "docs/patterns/fastapi.mdx",
+      "docs/patterns/openapi.mdx",
+      "src/fastmcp/server/openapi.py"
+    ],
+    "gold_patch_file_count": 3,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "pybamm-team__pybamm-4865",
+    "repo": "pybamm-team/PyBaMM",
+    "base_commit": "0d5af5c3f258ccc41715ae8fb9650908a95a06fc",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 22}",
+    "gold_patch_files": [
+      "src/pybamm/solvers/base_solver.py",
+      "src/pybamm/solvers/idaklu_solver.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-28734",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "1c892c20334185294fa06ee5bf7a91ec843bbaa7",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 14}",
+    "gold_patch_files": [
+      "doc/api/next_api_changes/behavior/28734-REC.rst",
+      "lib/matplotlib/_constrained_layout.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "conan-io__conan-17838",
+    "repo": "conan-io/conan",
+    "base_commit": "a21c0cf650d1a31577d794b1faee5dcde005d45e",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 7}",
+    "gold_patch_files": [
+      "conan/tools/cmake/cmakedeps/templates/config.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-29249",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "eec68e40db9e2de2a592cdd6956443b2534bb37f",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 17}",
+    "gold_patch_files": [
+      "lib/matplotlib/axis.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "instructlab__instructlab-3125",
+    "repo": "instructlab/instructlab",
+    "base_commit": "5e7c7b4d53ce320a4de201c31c4fdd153ab207bc",
+    "difficulty": "{'files': 5, 'hunks': 12, 'lines': 64}",
+    "gold_patch_files": [
+      "pyproject.toml",
+      "src/instructlab/cli/process/list.py",
+      "src/instructlab/data/generate_data.py",
+      "src/instructlab/defaults.py",
+      "src/instructlab/process/process.py"
+    ],
+    "gold_patch_file_count": 5,
+    "bucket": "multi_file_4_plus"
+  },
+  {
+    "instance_id": "python-babel__babel-1126",
+    "repo": "python-babel/babel",
+    "base_commit": "ea84d9d5f0bd2859f3281e4dac812ae05d33f466",
+    "difficulty": "{'files': 1, 'hunks': 4, 'lines': 10}",
+    "gold_patch_files": [
+      "babel/messages/extract.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-29388",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "ba32c7e8e263675431b49d6eae71e7fa3945d286",
+    "difficulty": "{'files': 1, 'hunks': 3, 'lines': 18}",
+    "gold_patch_files": [
+      "lib/matplotlib/axis.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "instructlab__instructlab-2236",
+    "repo": "instructlab/instructlab",
+    "base_commit": "832ebf0f1cec31d294b12a67b6a7e199ed22882e",
+    "difficulty": "{'files': 6, 'hunks': 20, 'lines': 595}",
+    "gold_patch_files": [
+      ".spellcheck-en-custom.txt",
+      "CHANGELOG.md",
+      "src/instructlab/configuration.py",
+      "src/instructlab/model/evaluate.py",
+      "src/instructlab/model/phased_training.py",
+      "src/instructlab/model/train.py"
+    ],
+    "gold_patch_file_count": 6,
+    "bucket": "multi_file_4_plus"
+  },
+  {
+    "instance_id": "instructlab__instructlab-3045",
+    "repo": "instructlab/instructlab",
+    "base_commit": "a833900d537ec15b50ef2288891ebfc2fa693f22",
+    "difficulty": "{'files': 12, 'hunks': 12, 'lines': 21}",
+    "gold_patch_files": [
+      "src/instructlab/configuration.py",
+      "src/instructlab/defaults.py",
+      "src/instructlab/profiles/intel/gaudi/gaudi_3.yaml",
+      "src/instructlab/profiles/nvidia/a100/a100_x2.yaml",
+      "src/instructlab/profiles/nvidia/a100/a100_x4.yaml",
+      "src/instructlab/profiles/nvidia/a100/a100_x8.yaml",
+      "src/instructlab/profiles/nvidia/h100/h100_x2.yaml",
+      "src/instructlab/profiles/nvidia/h100/h100_x4.yaml",
+      "src/instructlab/profiles/nvidia/h100/h100_x8.yaml",
+      "src/instructlab/profiles/nvidia/l4/l4_x8.yaml",
+      "src/instructlab/profiles/nvidia/l40s/l40s_x4.yaml",
+      "src/instructlab/profiles/nvidia/l40s/l40s_x8.yaml"
+    ],
+    "gold_patch_file_count": 12,
+    "bucket": "multi_file_4_plus"
+  },
+  {
+    "instance_id": "streamlink__streamlink-6328",
+    "repo": "streamlink/streamlink",
+    "base_commit": "f3c3546925897243edb4e3ba42210c5262ce74cf",
+    "difficulty": "{'files': 1, 'hunks': 5, 'lines': 26}",
+    "gold_patch_files": [
+      "src/streamlink/stream/dash/manifest.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "python-babel__babel-1141",
+    "repo": "python-babel/babel",
+    "base_commit": "f1c8633a7d765f07b94e0a6097b3f0c7912b955f",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 5}",
+    "gold_patch_files": [
+      "babel/dates.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-29209",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "690c55f736bbb285ef9e2a7e9f1634fdc53a5542",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 5}",
+    "gold_patch_files": [
+      "lib/matplotlib/axes/_axes.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "conan-io__conan-17382",
+    "repo": "conan-io/conan",
+    "base_commit": "aa4920ec0935511b0f3d8f57040b70c00996e0c4",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 3}",
+    "gold_patch_files": [
+      "conan/tools/system/package_manager.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "instructlab__instructlab-3118",
+    "repo": "instructlab/instructlab",
+    "base_commit": "a060edf190c8820adb8428678fb923f184aa42a4",
+    "difficulty": "{'files': 2, 'hunks': 4, 'lines': 6}",
+    "gold_patch_files": [
+      "src/instructlab/cli/model/download.py",
+      "src/instructlab/defaults.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-28577",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "c51103a068db018bad1152f78141d6c7360c29ff",
+    "difficulty": "{'files': 1, 'hunks': 4, 'lines': 33}",
+    "gold_patch_files": [
+      "lib/matplotlib/axis.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "python-control__python-control-1145",
+    "repo": "python-control/python-control",
+    "base_commit": "dc7d71bd1a2d143f10fa8fe91d31292bdf8f5113",
+    "difficulty": "{'files': 4, 'hunks': 12, 'lines': 51}",
+    "gold_patch_files": [
+      "control/ctrlplot.py",
+      "control/descfcn.py",
+      "control/freqplot.py",
+      "control/nichols.py"
+    ],
+    "gold_patch_file_count": 4,
+    "bucket": "multi_file_4_plus"
+  },
+  {
+    "instance_id": "instructlab__instructlab-2540",
+    "repo": "instructlab/instructlab",
+    "base_commit": "bcf450d0eb712309fa22fd23073ddfba51d575e8",
+    "difficulty": "{'files': 25, 'hunks': 34, 'lines': 90}",
+    "gold_patch_files": [
+      "CHANGELOG.md",
+      "README.md",
+      "docs/index.rst",
+      "src/instructlab/configuration.py",
+      "src/instructlab/model/chat.py",
+      "src/instructlab/profiles/apple/m1/m1_max.yaml",
+      "src/instructlab/profiles/apple/m1/m1_ultra.yaml",
+      "src/instructlab/profiles/apple/m2/m2.yaml",
+      "src/instructlab/profiles/apple/m2/m2_max.yaml",
+      "src/instructlab/profiles/apple/m2/m2_pro.yaml",
+      "src/instructlab/profiles/apple/m2/m2_ultra.yaml",
+      "src/instructlab/profiles/apple/m3/m3.yaml",
+      "src/instructlab/profiles/apple/m3/m3_max.yaml",
+      "src/instructlab/profiles/apple/m3/m3_pro.yaml",
+      "src/instructlab/profiles/intel/cpu.yaml",
+      "src/instructlab/profiles/intel/gaudi/gaudi_3.yaml",
+      "src/instructlab/profiles/nvidia/a100/a100_x2.yaml",
+      "src/instructlab/profiles/nvidia/a100/a100_x4.yaml",
+      "src/instructlab/profiles/nvidia/a100/a100_x8.yaml",
+      "src/instructlab/profiles/nvidia/h100/h100_x2.yaml",
+      "src/instructlab/profiles/nvidia/h100/h100_x4.yaml",
+      "src/instructlab/profiles/nvidia/h100/h100_x8.yaml",
+      "src/instructlab/profiles/nvidia/l4/l4_x8.yaml",
+      "src/instructlab/profiles/nvidia/l40s/l40s_x4.yaml",
+      "src/instructlab/profiles/nvidia/l40s/l40s_x8.yaml"
+    ],
+    "gold_patch_file_count": 25,
+    "bucket": "multi_file_4_plus"
+  },
+  {
+    "instance_id": "olofk__fusesoc-720",
+    "repo": "olofk/fusesoc",
+    "base_commit": "d3aa7910a1e3e20c7b3489811aa649fc9ff80c19",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 29}",
+    "gold_patch_files": [
+      "fusesoc/fusesoc.py",
+      "fusesoc/librarymanager.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-29783",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "c887ecbc753763ff4232041cc84c9c6a44d20fd4",
+    "difficulty": "{'files': 1, 'hunks': 3, 'lines': 36}",
+    "gold_patch_files": [
+      "lib/matplotlib/axes/_axes.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "conan-io__conan-17387",
+    "repo": "conan-io/conan",
+    "base_commit": "05cb9f88f7b03e5fedba15de9d083e3059abd6e4",
+    "difficulty": "{'files': 5, 'hunks': 8, 'lines': 31}",
+    "gold_patch_files": [
+      "conan/tools/build/flags.py",
+      "conan/tools/cmake/toolchain/blocks.py",
+      "conan/tools/gnu/autotoolstoolchain.py",
+      "conan/tools/gnu/gnutoolchain.py",
+      "conan/tools/microsoft/nmaketoolchain.py"
+    ],
+    "gold_patch_file_count": 5,
+    "bucket": "multi_file_4_plus"
+  },
+  {
+    "instance_id": "conan-io__conan-18101",
+    "repo": "conan-io/conan",
+    "base_commit": "025c796756241ba9bed8c979e72930afa712b299",
+    "difficulty": "{'files': 2, 'hunks': 3, 'lines': 6}",
+    "gold_patch_files": [
+      "conan/internal/model/requires.py",
+      "conans/client/graph/graph_binaries.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "python-control__python-control-1096",
+    "repo": "python-control/python-control",
+    "base_commit": "ec7dc8aea29b51f08c4671a6d2fc2c800c29091f",
+    "difficulty": "{'files': 2, 'hunks': 4, 'lines': 28}",
+    "gold_patch_files": [
+      "control/freqplot.py",
+      "control/rlocus.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "kedro-org__kedro-4540",
+    "repo": "kedro-org/kedro",
+    "base_commit": "ed041973514db89e77ee78b13dd805ac0b358588",
+    "difficulty": "{'files': 2, 'hunks': 3, 'lines': 28}",
+    "gold_patch_files": [
+      "RELEASE.md",
+      "kedro/ipython/__init__.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-29719",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "70d0bf779fb0876e34540e9df37c3f4559006aec",
+    "difficulty": "{'files': 3, 'hunks': 3, 'lines': 46}",
+    "gold_patch_files": [
+      "lib/matplotlib/axes/_axes.py",
+      "lib/matplotlib/collections.py",
+      "lib/matplotlib/lines.py"
+    ],
+    "gold_patch_file_count": 3,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-29721",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "92935966250922b21f688947593da7d1d15b4efc",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 15}",
+    "gold_patch_files": [
+      "lib/matplotlib/pyplot.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "conan-io__conan-17051",
+    "repo": "conan-io/conan",
+    "base_commit": "216d3acf9a0047a258ac2f3a0645f2dc9a04c630",
+    "difficulty": "{'files': 1, 'hunks': 14, 'lines': 85}",
+    "gold_patch_files": [
+      "conan/tools/gnu/pkgconfigdeps.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "instructlab__instructlab-3184",
+    "repo": "instructlab/instructlab",
+    "base_commit": "2fffc620651d6d22c3279a1a6aac302146b97036",
+    "difficulty": "{'files': 1, 'hunks': 4, 'lines': 43}",
+    "gold_patch_files": [
+      "src/instructlab/rag/haystack/components/document_splitter.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-29696",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "03b74eaa4b60a5a713e03cb22a5d863bc041750d",
+    "difficulty": "{'files': 4, 'hunks': 6, 'lines': 31}",
+    "gold_patch_files": [
+      "doc/users/next_whats_new/bar_label_padding_update.rst",
+      "lib/matplotlib/axes/_axes.py",
+      "lib/matplotlib/axes/_axes.pyi",
+      "lib/matplotlib/pyplot.py"
+    ],
+    "gold_patch_file_count": 4,
+    "bucket": "multi_file_4_plus"
+  },
+  {
+    "instance_id": "conan-io__conan-18089",
+    "repo": "conan-io/conan",
+    "base_commit": "c516d3fe48e7ca469ca94a293f12df56f7964fe3",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 9}",
+    "gold_patch_files": [
+      "conans/client/rest/auth_manager.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "conan-io__conan-17301",
+    "repo": "conan-io/conan",
+    "base_commit": "7728bc9722a12c758b4cc2f39cf656a0497e5583",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 8}",
+    "gold_patch_files": [
+      "conan/tools/cmake/cmake.py",
+      "conan/tools/microsoft/msbuild.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "python__mypy-18966",
+    "repo": "python/mypy",
+    "base_commit": "b62957b992ec1da37c42ad37e8ed23fc51644b3e",
+    "difficulty": "{'files': 5, 'hunks': 8, 'lines': 23}",
+    "gold_patch_files": [
+      "mypy/checker.py",
+      "mypy/nodes.py",
+      "mypy/semanal.py",
+      "mypy/suggestions.py",
+      "mypy/typeops.py"
+    ],
+    "gold_patch_file_count": 5,
+    "bucket": "multi_file_4_plus"
+  },
+  {
+    "instance_id": "instructlab__instructlab-2579",
+    "repo": "instructlab/instructlab",
+    "base_commit": "a30b177e0c7f022f3ea63323dbd427401b371d92",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 134}",
+    "gold_patch_files": [
+      "CHANGELOG.md",
+      "src/instructlab/profiles/intel/gaudi/gaudi_3.yaml"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-29401",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "df49afcdbeacfce25256376dc95841ab41f05424",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 2}",
+    "gold_patch_files": [
+      "lib/matplotlib/axes/_axes.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "ag2ai__faststream-1796",
+    "repo": "ag2ai/faststream",
+    "base_commit": "d44da7516ef72d9ce9e0e214facabe13b901681e",
+    "difficulty": "{'files': 2, 'hunks': 7, 'lines': 21}",
+    "gold_patch_files": [
+      "faststream/broker/fastapi/route.py",
+      "faststream/nats/response.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "python-babel__babel-1120",
+    "repo": "python-babel/babel",
+    "base_commit": "0005c85fccccb491930f064ea8d064e87ce7ee79",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 27}",
+    "gold_patch_files": [
+      "babel/messages/pofile.py",
+      "babel/util.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "conan-io__conan-17408",
+    "repo": "conan-io/conan",
+    "base_commit": "6765af055555c60f2170352e3f2d809a101d351a",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 14}",
+    "gold_patch_files": [
+      "conans/client/rest_client_local_recipe_index.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-29052",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "5714a1872bc0b867089b4b5e412f762c84d18ce2",
+    "difficulty": "{'files': 1, 'hunks': 3, 'lines': 29}",
+    "gold_patch_files": [
+      "lib/matplotlib/colors.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "streamlink__streamlink-6353",
+    "repo": "streamlink/streamlink",
+    "base_commit": "2bcdafc67824a60d65bce8bea65d019061c4e360",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 4}",
+    "gold_patch_files": [
+      "src/streamlink/plugins/mangomolo.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "pypa__twine-1188",
+    "repo": "pypa/twine",
+    "base_commit": "873f33ed40bb38407a87abba6cd2a65f35eb6286",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 1}",
+    "gold_patch_files": [
+      "twine/commands/check.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "openai__openai-agents-python-357",
+    "repo": "openai/openai-agents-python",
+    "base_commit": "f99fa5f23c039e8e8434871b0e39e9e889d4a03b",
+    "difficulty": "{'files': 3, 'hunks': 6, 'lines': 33}",
+    "gold_patch_files": [
+      "src/agents/model_settings.py",
+      "src/agents/models/openai_chatcompletions.py",
+      "src/agents/models/openai_responses.py"
+    ],
+    "gold_patch_file_count": 3,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "python-control__python-control-1065",
+    "repo": "python-control/python-control",
+    "base_commit": "d810d5aac00cf9a4215f601247d08f6f7904bcfe",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 19}",
+    "gold_patch_files": [
+      "control/pzmap.py",
+      "control/rlocus.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "python-babel__babel-1104",
+    "repo": "python-babel/babel",
+    "base_commit": "2f87363410f3c904e107e85ca10b9f84902db93f",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 8}",
+    "gold_patch_files": [
+      "babel/core.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "arviz-devs__arviz-2408",
+    "repo": "arviz-devs/arviz",
+    "base_commit": "3205b82bb4d6097c31f7334d7ac51a6de37002d0",
+    "difficulty": "{'files': 5, 'hunks': 9, 'lines': 112}",
+    "gold_patch_files": [
+      "CHANGELOG.md",
+      "arviz/plots/backends/bokeh/hdiplot.py",
+      "arviz/plots/backends/bokeh/lmplot.py",
+      "arviz/plots/backends/matplotlib/lmplot.py",
+      "arviz/plots/lmplot.py"
+    ],
+    "gold_patch_file_count": 5,
+    "bucket": "multi_file_4_plus"
+  },
+  {
+    "instance_id": "streamlink__streamlink-6111",
+    "repo": "streamlink/streamlink",
+    "base_commit": "bb070a7d912866805fad67482b1a029908e0eab4",
+    "difficulty": "{'files': 2, 'hunks': 4, 'lines': 12}",
+    "gold_patch_files": [
+      "src/streamlink/plugin/api/aws_waf.py",
+      "src/streamlink/webbrowser/chromium.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "arviz-devs__arviz-2404",
+    "repo": "arviz-devs/arviz",
+    "base_commit": "1d8c0102e1277ae3fe8a62d3ca47a84ba222bdb6",
+    "difficulty": "{'files': 1, 'hunks': 4, 'lines': 14}",
+    "gold_patch_files": [
+      "arviz/plots/autocorrplot.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-29013",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "41be3a05797a7827fb4e27d7c1edda4a22a6036a",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 10}",
+    "gold_patch_files": [
+      "lib/matplotlib/figure.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "instructlab__instructlab-2789",
+    "repo": "instructlab/instructlab",
+    "base_commit": "ed2c941a8ee3dafb884746d03bcdc0cae57fd8a0",
+    "difficulty": "{'files': 2, 'hunks': 3, 'lines': 23}",
+    "gold_patch_files": [
+      "src/instructlab/cli/data/generate.py",
+      "src/instructlab/configuration.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "conan-io__conan-17954",
+    "repo": "conan-io/conan",
+    "base_commit": "2498cd430fa3448c11109978f7a967e4aa032c5a",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 3}",
+    "gold_patch_files": [
+      "conan/internal/model/conan_file.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "instructlab__instructlab-1762",
+    "repo": "instructlab/instructlab",
+    "base_commit": "81c69513b447656f0ba03a7ef6debfa505e0c22a",
+    "difficulty": "{'files': 2, 'hunks': 3, 'lines': 11}",
+    "gold_patch_files": [
+      "CHANGELOG.md",
+      "src/instructlab/configuration.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "python-control__python-control-1092",
+    "repo": "python-control/python-control",
+    "base_commit": "93c4c8d2827bad02e48234799f159f196acb2282",
+    "difficulty": "{'files': 3, 'hunks': 7, 'lines': 53}",
+    "gold_patch_files": [
+      "control/__init__.py",
+      "control/lti.py",
+      "control/statesp.py"
+    ],
+    "gold_patch_file_count": 3,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "conan-io__conan-16870",
+    "repo": "conan-io/conan",
+    "base_commit": "f5d6598ab0363234d42436ed83a18ef96d78f6fa",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 10}",
+    "gold_patch_files": [
+      "conans/client/graph/graph.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "pybamm-team__pybamm-4644",
+    "repo": "pybamm-team/PyBaMM",
+    "base_commit": "3bf74038405bd9f489395eb3c3ae2cbd4911a1c5",
+    "difficulty": "{'files': 5, 'hunks': 6, 'lines': 13}",
+    "gold_patch_files": [
+      "CHANGELOG.md",
+      "docs/source/examples/notebooks/models/pouch-cell-model.ipynb",
+      "examples/scripts/compare_comsol/compare_comsol_DFN.py",
+      "src/pybamm/expression_tree/symbol.py",
+      "src/pybamm/models/base_model.py"
+    ],
+    "gold_patch_file_count": 5,
+    "bucket": "multi_file_4_plus"
+  },
+  {
+    "instance_id": "conan-io__conan-17326",
+    "repo": "conan-io/conan",
+    "base_commit": "b325a4bb87ffaa994a289826621941e9673db284",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 10}",
+    "gold_patch_files": [
+      "conans/model/dependencies.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "python-control__python-control-1138",
+    "repo": "python-control/python-control",
+    "base_commit": "f6799ab8e60d7fcd4b02d52d5903f08c24957faf",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 4}",
+    "gold_patch_files": [
+      "control/freqplot.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-29689",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "0b7a88a967ce8d02284dd4c7e47889ccc0bbcbf0",
+    "difficulty": "{'files': 2, 'hunks': 5, 'lines': 83}",
+    "gold_patch_files": [
+      "lib/matplotlib/sphinxext/figmpl_directive.py",
+      "lib/matplotlib/sphinxext/plot_directive.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "instructlab__instructlab-2927",
+    "repo": "instructlab/instructlab",
+    "base_commit": "5e7c7b4d53ce320a4de201c31c4fdd153ab207bc",
+    "difficulty": "{'files': 1, 'hunks': 5, 'lines': 44}",
+    "gold_patch_files": [
+      "src/instructlab/model/serve_backend.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "conan-io__conan-16986",
+    "repo": "conan-io/conan",
+    "base_commit": "216d3acf9a0047a258ac2f3a0645f2dc9a04c630",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 6}",
+    "gold_patch_files": [
+      "conans/model/version_range.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "conan-io__conan-16789",
+    "repo": "conan-io/conan",
+    "base_commit": "369a3d0751b20cdb19abf7547b8b98e8cbd6dec9",
+    "difficulty": "{'files': 1, 'hunks': 3, 'lines': 18}",
+    "gold_patch_files": [
+      "conan/tools/gnu/pkgconfigdeps.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "fsspec__filesystem_spec-1829",
+    "repo": "fsspec/filesystem_spec",
+    "base_commit": "0d5d47ed2a8ca829ab1e7fa9ffb614951728cad1",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 20}",
+    "gold_patch_files": [
+      "fsspec/implementations/local.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "instructlab__instructlab-3060",
+    "repo": "instructlab/instructlab",
+    "base_commit": "ac7cc07f8f6c7ffb8860d9b799c4b85aaacf11ae",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 6}",
+    "gold_patch_files": [
+      "src/instructlab/rag/taxonomy_utils.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "streamlink__streamlink-6242",
+    "repo": "streamlink/streamlink",
+    "base_commit": "23a98cc5c543fd2456a189d794ff135008e50bf6",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 5}",
+    "gold_patch_files": [
+      "src/streamlink/plugins/tv3cat.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "streamlink__streamlink-6205",
+    "repo": "streamlink/streamlink",
+    "base_commit": "ffa7db56eaa8ee4b349613eedff476ab311c809d",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 10}",
+    "gold_patch_files": [
+      "src/streamlink/session/http.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "jlowin__fastmcp-252",
+    "repo": "jlowin/fastmcp",
+    "base_commit": "7df8db451dbbaf4e96adfd8289b6e84e64b5a5b2",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 20}",
+    "gold_patch_files": [
+      "src/fastmcp/utilities/func_metadata.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "conan-io__conan-17923",
+    "repo": "conan-io/conan",
+    "base_commit": "ad8ff14bdd6b80ed9fd1c619b479f8a5c0838bab",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 4}",
+    "gold_patch_files": [
+      "conan/internal/model/cpp_info.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "instructlab__instructlab-3135",
+    "repo": "instructlab/instructlab",
+    "base_commit": "5e7c7b4d53ce320a4de201c31c4fdd153ab207bc",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 4}",
+    "gold_patch_files": [
+      "src/instructlab/model/accelerated_train.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "stanfordnlp__dspy-1651",
+    "repo": "stanfordnlp/dspy",
+    "base_commit": "9a952fef5fa8399cb82cb726860814e21816f16d",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 10}",
+    "gold_patch_files": [
+      "dspy/functional/functional.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-29808",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "bfbd0b56d7abf639101fb79ed684642ac41d3277",
+    "difficulty": "{'files': 5, 'hunks': 8, 'lines': 59}",
+    "gold_patch_files": [
+      "doc/users/next_whats_new/color_cycle_from_sequence.rst",
+      "galleries/users_explain/artists/color_cycle.py",
+      "lib/matplotlib/__init__.py",
+      "lib/matplotlib/mpl-data/matplotlibrc",
+      "lib/matplotlib/rcsetup.py"
+    ],
+    "gold_patch_file_count": 5,
+    "bucket": "multi_file_4_plus"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-29537",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "29f3a5ca0bd366d5bffebfcfba6181af322041b3",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 2}",
+    "gold_patch_files": [
+      "lib/matplotlib/ticker.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "streamlink__streamlink-6397",
+    "repo": "streamlink/streamlink",
+    "base_commit": "deeae4510eae72dc85ad2a9982f01165dad707d8",
+    "difficulty": "{'files': 1, 'hunks': 3, 'lines': 253}",
+    "gold_patch_files": [
+      "src/streamlink/plugins/ceskatelevize.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "ag2ai__faststream-2170",
+    "repo": "ag2ai/faststream",
+    "base_commit": "cf04446a5a38af7940aaa83410a5863214b4d542",
+    "difficulty": "{'files': 3, 'hunks': 8, 'lines': 36}",
+    "gold_patch_files": [
+      "faststream/kafka/broker/registrator.py",
+      "faststream/kafka/publisher/producer.py",
+      "faststream/kafka/publisher/usecase.py"
+    ],
+    "gold_patch_file_count": 3,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-28933",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "cf84d9a6410dec07f57916905c9f54bf00d22b2e",
+    "difficulty": "{'files': 3, 'hunks': 4, 'lines': 41}",
+    "gold_patch_files": [
+      "doc/api/next_api_changes/deprecations/28933-AL.rst",
+      "lib/matplotlib/lines.py",
+      "lib/matplotlib/lines.pyi"
+    ],
+    "gold_patch_file_count": 3,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "streamlink__streamlink-6178",
+    "repo": "streamlink/streamlink",
+    "base_commit": "bb020520aab4bcee770bfb74d5206bd9a4667f89",
+    "difficulty": "{'files': 1, 'hunks': 4, 'lines': 94}",
+    "gold_patch_files": [
+      "src/streamlink/plugins/vk.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "streamlink__streamlink-6479",
+    "repo": "streamlink/streamlink",
+    "base_commit": "14761c910fa995c458333d8780a5797c0aab6308",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 5}",
+    "gold_patch_files": [
+      "src/streamlink/stream/hls/hls.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "conan-io__conan-18037",
+    "repo": "conan-io/conan",
+    "base_commit": "1f112d48a2829dd8f274275bb1a5cc0a11379f62",
+    "difficulty": "{'files': 1, 'hunks': 4, 'lines': 19}",
+    "gold_patch_files": [
+      "conan/api/model/list.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "pytransitions__transitions-694",
+    "repo": "pytransitions/transitions",
+    "base_commit": "4d8d103b52e3eaad6dc8e82c829fb98319782406",
+    "difficulty": "{'files': 2, 'hunks': 2, 'lines': 18}",
+    "gold_patch_files": [
+      "Changelog.md",
+      "transitions/extensions/nesting.py"
+    ],
+    "gold_patch_file_count": 2,
+    "bucket": "multi_file_2_3"
+  },
+  {
+    "instance_id": "conan-io__conan-17123",
+    "repo": "conan-io/conan",
+    "base_commit": "1e42a99a1d6225f320a4938fcd7a778a88a8b410",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 16}",
+    "gold_patch_files": [
+      "conan/internal/api/config/config_installer.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "conan-io__conan-16776",
+    "repo": "conan-io/conan",
+    "base_commit": "8ebf1ca548854919398c38d9f15912ad01f3b18a",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 10}",
+    "gold_patch_files": [
+      "conans/client/rest_client_local_recipe_index.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "python-control__python-control-1099",
+    "repo": "python-control/python-control",
+    "base_commit": "0ff045263f69802e32d7e5a69ac5c16142f7a96e",
+    "difficulty": "{'files': 1, 'hunks': 3, 'lines': 39}",
+    "gold_patch_files": [
+      "control/statefbk.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "python-babel__babel-1131",
+    "repo": "python-babel/babel",
+    "base_commit": "313277af993cebfbae49d385327fc7f45e32f737",
+    "difficulty": "{'files': 1, 'hunks': 4, 'lines': 47}",
+    "gold_patch_files": [
+      "babel/dates.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "streamlink__streamlink-6452",
+    "repo": "streamlink/streamlink",
+    "base_commit": "e520a5e531faa5961a260fd38db476008a86d718",
+    "difficulty": "{'files': 1, 'hunks': 2, 'lines': 174}",
+    "gold_patch_files": [
+      "src/streamlink/plugins/euronews.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "matplotlib__matplotlib-28881",
+    "repo": "matplotlib/matplotlib",
+    "base_commit": "13380e100200db3a04cb43be968d6962d51d0a28",
+    "difficulty": "{'files': 1, 'hunks': 1, 'lines': 2}",
+    "gold_patch_files": [
+      "lib/matplotlib/lines.py"
+    ],
+    "gold_patch_file_count": 1,
+    "bucket": "single_file"
+  },
+  {
+    "instance_id": "stanfordnlp__dspy-1609",
+    "repo": "stanfordnlp/dspy",
+    "base_commit": "16ceaba5f7126ca86e5b50b669975c926b9f8f55",
+    "difficulty": "{'files': 4, 'hunks': 14, 'lines': 204}",
+    "gold_patch_files": [
+      "dspy/adapters/chat_adapter.py",
+      "dspy/predict/predict.py",
+      "dspy/signatures/utils.py",
+      "dspy/utils/dummies.py"
+    ],
+    "gold_patch_file_count": 4,
+    "bucket": "multi_file_4_plus"
+  }
+]

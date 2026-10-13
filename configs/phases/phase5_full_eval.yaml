@@ -1,0 +1,65 @@
+defaults:
+  - ../base
+
+phase: 5
+name: full_benchmark_evaluation
+
+dataset:
+  benchmark: swe-bench-verified
+  tasks: 500
+
+conditions:
+  shell_only:
+    retrieval: none
+    tools: [grep, find, cat]
+  dense_rag:
+    retrieval: embedding_knn
+    model: voyage-code-3
+  ssg_ppr:
+    retrieval: graph
+    graph: ssg
+    method: ppr
+  ssg_learned_edges_ppr:
+    retrieval: graph
+    graph: augmented
+    method: ppr
+  proposed:
+    retrieval: graph
+    graph: augmented
+    method: vgib
+
+metrics:
+  primary:
+    - pass_at_1
+  secondary:
+    - pass_at_3
+    - token_efficiency_total
+    - token_efficiency_navigation
+    - token_efficiency_reasoning
+    - retrieval_token_budget
+  stratification:
+    by: patch_complexity
+    groups:
+      easy: 1_file
+      medium: 2_3_files
+      hard: 4_plus_files
+
+ablations:
+  A_learned_edges_only:
+    description: "Remove VGIB, use learned edges + PPR"
+    isolates: edge_predictor_contribution
+  B_vgib_on_static_only:
+    description: "Remove learned edges, apply VGIB to SSG"
+    isolates: ib_selection_contribution
+  C_beta_sensitivity:
+    beta_values: [0.001, 0.01, 0.1, 1.0]
+    report: [pass_at_1, retrieval_token_count]
+  D_graph_entropy:
+    description: "Track H(G) = -Σ p_e log(p_e) throughout training"
+    verify: "IB regularization maintains entropy above collapse threshold"
+
+statistical_rigor:
+  seeds: 3
+  report: [mean, std]
+  pairwise_test: mcnemar
+  significance: 0.05

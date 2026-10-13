@@ -1,0 +1,11 @@
+{
+  "description": "Hand-verified direct call edges for tests/fixtures/minimal_pkg (PyCG-style resolution).",
+  "call_edges": [
+    ["pack.main.Child.run", "pack.utils.helper"],
+    ["pack.main.Child.run", "pack.base.Base.save"],
+    ["pack.main.Child.run", "pack.dup_a.dup"],
+    ["pack.ambiguous.ambiguous_caller", "pack.dup_a.dup"],
+    ["pack.ambiguous.ambiguous_caller", "pack.dup_b.dup"]
+  ],
+  "notes": "Child.run uses dup_a.dup(); resolution prefers the qualified suffix dup_a.dup over bare dup."
+}

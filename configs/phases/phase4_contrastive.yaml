@@ -1,0 +1,46 @@
+defaults:
+  - ../base
+
+phase: 4
+name: contrastive_training
+
+contrastive_collection:
+  runs_per_task: 10
+  edge_mask_ratio: 0.20
+  training_tasks: 35
+  expected_trajectories: 350
+  expected_success_rate: [0.30, 0.40]
+
+models:
+  supervised:
+    name: model_s
+    base: codebert
+    loss: binary_cross_entropy
+    labels: execution_trace
+    description: "Fine-tuned on (task, entity) → relevance using trace labels from Phase 2"
+
+  contrastive:
+    name: model_c
+    base: codebert
+    loss: infonce
+    labels: task_success_failure
+    description: "Fine-tuned on (task, context) pairs from trajectory success/failure"
+
+evaluation:
+  held_out_tasks: 15
+  metrics: [precision_at_k, recall_at_k, mean_average_precision]
+  ranking_method: cosine_similarity
+
+significance_threshold:
+  model_c_vs_model_s: 0.90
+
+kill_criterion:
+  metric: mean_average_precision
+  ratio_threshold: 0.75
+  action: "Rely on supervised trace-based training, accept higher data collection cost"
+
+significance:
+  description: >
+    If contrastive reaches 90%+ of supervised quality, this validates a dramatically
+    cheaper pipeline — only task success/failure signals needed, not per-task execution
+    traces. Unlocks scalable training across thousands of repos.

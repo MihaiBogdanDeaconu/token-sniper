@@ -1,0 +1,58 @@
+defaults:
+  - ../base
+
+phase: 1
+name: static_graph_baseline
+
+graph_construction:
+  parser: tree-sitter
+  grammars: [python]
+  repositories: 12
+  quality_targets:
+    node_coverage_files: 0.95
+    node_coverage_entities: 0.90
+    edge_resolution_direct_calls: 0.80
+  quality_metrics:
+    - node_count
+    - edge_count
+    - average_degree
+    - diameter
+    - connected_components
+
+conditions:
+  shell:
+    retrieval: none
+    tools: [grep, find, cat, sed]
+    reuse_from: phase0.blind_agent
+
+  graph_bfs:
+    retrieval: graph
+    method: bfs
+    max_hops: 2
+    entry_point_selection: llm_prompt
+    entry_points_count: [1, 3]
+
+  graph_ppr:
+    retrieval: graph
+    method: personalized_pagerank
+    alpha: 0.15
+    entry_point_selection: llm_prompt
+    entry_points_count: [1, 3]
+
+  embedding_knn:
+    retrieval: dense
+    model: voyage-code-3
+    description: "Standard dense-retrieval RAG baseline (no graph)"
+
+metrics:
+  retrieval:
+    - precision_at_k
+    - recall_at_k
+  k_values: [10, 20, 50, 100]
+  downstream:
+    - pass_at_1
+    - token_count
+
+kill_criterion:
+  condition: "Neither graph_bfs nor graph_ppr beats embedding_knn on precision@k for any k"
+  action: "Revise graph construction — richer edge types, cross-file data flow analysis"

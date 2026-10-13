@@ -1,0 +1,42 @@
+repo: https://github.com/gersteinlab/LocAgent
+commit: 4935b557326c154bad8e8dcf3747cc8d32d1f387
+branch: master
+vendored_at: 2026-08-28
+license: Apache-2.0
+
+Vendored as a plain copy (no submodule) under third_party/locagent/, with
+.git stripped. Update this file's commit hash if the vendored copy is ever
+re-synced to a newer upstream commit.
+
+Scoring entry points used by token_sniper (see
+token_sniper/evaluation/locagent_scoring.py):
+  - third_party/locagent/evaluation/eval_metric.py
+    - evaluate_results(loc_file, level2key_dict, dataset, split, ...)
+    - cal_metrics_w_dataset(...)
+  - third_party/locagent/util/utils.py: load_jsonl(...)
+
+Note: evaluate_results/cal_metrics_w_dataset (the dataset-keyed scoring
+path, used here) take no filter_list argument and never apply the
+26-instance `filtered_instances` exclusion list defined at the top of
+eval_metric.py -- that list is only wired into the separate
+cal_metrics_w_file/eval_w_file functions, which this project does not use.
+
+third_party/locagent/evaluation/loc_output/locagent/claude_3-5/loc_outputs.jsonl
+ships LocAgent's own published Lite-274 predictions (Claude 3.5 agent),
+used as the sanity-check target in scripts/verify_locagent_baseline.py.
+
+## Python version note
+
+eval_metric.py uses a Python-3.12+-only f-string quirk (nested identical
+quotes) in two lines of its unused `docs`-key branch -- this fails to
+*parse* (SyntaxError) under this repo's Python >=3.11 floor, so it can't be
+imported in-process. Rather than patch the vendored file, it runs isolated:
+
+    /usr/local/bin/python3.13 -m venv third_party/locagent/.venv
+    third_party/locagent/.venv/bin/pip install pandas torch datasets
+
+token_sniper/evaluation/locagent_scoring.py shells out to that venv via
+third_party/_run_locagent_scoring.py (glue code, kept outside
+third_party/locagent/ so the vendored tree itself stays untouched). The
+.venv/ directory is gitignored (matches LocAgent's own `.venv` gitignore
+rule) -- recreate it with the two commands above after a fresh clone.
